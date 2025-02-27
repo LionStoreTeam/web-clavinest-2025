@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@plugin "tailwindcss-animate";
+
+.welcome {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23DBD5D4' stroke-width='54.2' stroke-opacity='0.08' %3E%3Ccircle fill='%23FBF0E4' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23fbf0e4' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23fbf0e4' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23fbf0e5' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23fbf0e5' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23fbf0e5' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23fbf0e5' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23fbf0e5' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23fbf0e5' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23fbf1e6' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23fbf1e6' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23fbf1e6' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%23fbf1e6' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23fbf1e6' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%23fbf1e6' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%23fbf1e7' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23fbf1e7' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23FBF1E7' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: cover; /* Hace que la imagen de fondo cubra toda la pantalla */
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  background-attachment: fixed; /* Hace que la imagen de fondo se mantenga fija al hacer scroll */
+}
+.bg-def {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23DBCFC7' stroke-width='54.2' stroke-opacity='0.1' %3E%3Ccircle fill='%23FBF4ED' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23fbf4ed' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23fbf4ee' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23fbf5ee' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23fbf5ee' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23fbf5ee' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23fbf5ef' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23fbf5ef' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23fbf5ef' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23fbf6f0' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23fbf6f0' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23fbf6f0' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%23fbf6f1' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23fbf6f1' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%23fbf6f1' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%23fbf7f1' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23fbf7f2' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23FBF7F2' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: cover; /* Hace que la imagen de fondo cubra toda la pantalla */
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  background-attachment: fixed; /* Hace que la imagen de fondo se mantenga fija al hacer scroll */
+}
+
+.paper-bg {
+  background-image: url("/paper-bg.jpg");
+  background-size: cover; /* Hace que la imagen de fondo cubra toda la pantalla */
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  background-attachment: fixed; /* Hace que la imagen de fondo se mantenga fija al hacer scroll */
+}
+
+.plant-bg {
+  background-image: url("https://images.pexels.com/photos/2395244/pexels-photo-2395244.jpeg");
+  background-size: cover; /* Hace que la imagen de fondo cubra toda la pantalla */
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  background-attachment: fixed; /* Hace que la imagen de fondo se mantenga fija al hacer scroll */
+  filter: grayscale(30%);
+}
+
+.float {
+  overflow: hidden;
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
