@@ -10,11 +10,11 @@ const Navbar = () => {
             <div className="mt-2 flex flex-col gap-2 sm:flex-row sm:gap-10 sm:mt-0">
                 <span className="flex gap-2 justify-center items-center text-center">
                     <BsTelephone className="size-5" />
-                    (+52) 777 - 000 - 0000
+                    (+52) 777 - 458 - 0621
                 </span>
                 <span className="flex gap-2 justify-center items-center text-center">
                     <CiMail className="size-5" />
-                    some@gmail.com
+                    alinngarcia.n@gmail.com
                 </span>
             </div>
 

@@ -12,10 +12,9 @@ const Footer = () => {
                 <h1 className="mb-10 text-[25px] md:text-[50px] border-b-2">
                     Llámanos
                     <br />
-                    (+52) 777 - 000 - 0000</h1>
+                    (+52) 777 - 458 - 0621</h1>
                 <Image src="/logo-w.png" alt='' width={350} height={350} className="float" />
-                <p className="text-[20px] md:text-[25px]">Some name here </p>
-                <p className="text-[20px] md:text-[25px] border-b-2">some@gmail.com</p>
+                <p className="text-[20px] md:text-[25px] border-b-2">alinngarcia.n@gmail.com</p>
             </div>
             {/* Social Media */}
             <div className="float mb-5 flex gap-5 justify-center items-center">
